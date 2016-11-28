@@ -1,0 +1,142 @@
+@import  url(css-clear.css);
+.center{width:1116px;margin:0 auto;position:relative;}			/*此处是文本居中*/
+a:hover{text-decoration:underline;}
+
+
+/*此处是头部*/
+.header{ background:#333;height:45px;line-height:45px;}
+.indexHhello { float:left; color:#ffffff;}			/*欢迎来网站*/
+.indexHtel {color:red !important;font-weight:600;}	/*电话号码*/
+
+.indexHelp{width:150px;float:right;}			/*帮助中心*/
+.indexHelp li{float:left;padding-left:10px;}		
+.indexHelp a{color:#fff;}
+.indexHelp a:hover{text-decoration:none;}
+
+
+/*此处是logo*/
+.bigNav{height:100px;}
+.logo{float:left;width:167px;height:100px;}/*因为logo是比较重要的，所以不用背景，用img*/
+
+
+/*此处是导航条*/
+.innerNav{padding-top:30px;}	/*没有给bigNav边框，但是他也没有挪动啊？？？？why?因为符父盒子和子盒子一起移动是margin的特性*/
+.innerNav li{display:block;width:80px;height:40px;float:left;margin-left:30px;font:20px/40px "微软雅黑";text-align:center;}
+.home{padding-bottom:8px;color:#ff6520;border-bottom:2px #ff6520 solid;}
+.innerNav a:hover{color:#00c;text-decoration:none;}
+.innerNav .home:hover{border-color:#ff6520;color:#ff6520;}
+
+/*此处是登录注册部分*/
+
+.register{float:right;width:280px;height:30px;padding-top:5px;}
+.regis{float:left;color:#666;font:20px/30px "微软雅黑";}
+
+
+
+/*此处是banner*/
+.indexBannerView{height:480px;background:url(../images/banner_02.gif) no-repeat center 0;}
+.indexBannerView .arrowLeft{cursor:pointer;width:46px;height:90px;position:absolute;left:-41px;top:195px;background:url(../images/arrow-left.png);background-repeat:no-repeat;}
+.indexBannerView .arrowRight{cursor:pointer;width:46px;height:90px;position:absolute;right:-41px;top:195px;background:url(../images/arrow-right.png);background-repeat:no-repeat;}
+.indexBannerView .bannerFanye{width:104px;height:12px;float:left;position:absolute;top:460px;left:50%;margin-left:-52px;}/*此处的top是针对自己的；如果用bottom真是不对的，也不能使用margin-top;*/
+.bannerFanye li{width:12px;height:12px;border-radius:50%;background:#fff;float:left;margin-left:7px;margin-right:7px;cursor:pointer;}
+.bannerFanye .fanyeFir{background:#ff6520;}
+
+
+/*此处是新手手册等*/
+.guide{height:220px;background:#f3f3f3;}
+.guide li{width:372px;float:left;text-align:center;font:14px "微软雅黑";color:#666;}
+.guide img{display:block;margin:0 auto;padding-top:25px;}
+.guide a{display:block;margin-top:13px;}
+
+
+
+/*头条关注*/
+.focus{margin-top:15px;background:#f3f3f3;}
+.focusImg{width:755px;height:282px;}
+.focus ul .focusImg{float:left;}
+.focus ul .focusText{float:right;width:361px;text-align:center;padding-top:75px;}
+.focus ul a{display:block;text-align:center;font:20px/24px "微软雅黑";}
+.focus .focusP{font:14px/18px "微软雅黑";color:#666;width:310px;text-indent:24px;margin:0 auto;padding-top:15px;}
+.focus ul .focusText span{display:block;}
+
+/*此处是主要内容      此处是introduce,九个图片的排列*/
+/*此处是第一个图片*/
+.listTitle{font:40px/40px "微软雅黑";color:#999;text-align:center;margin-top:15px;}/*最新上线等文字*/
+.itemList li{position:relative;width:366px;height:529px;float:left;border:1px #ccc solid;margin:15px 2px 0;}/*给了图片的边框和宽高,以及相对定位*/
+.itemList .introtext{width:366px;}
+.itemText{margin:30px 10px 0 5px;font:22px/33px "微软雅黑";}
+.itemText h2{color:#666;font:20px/33px "微软雅黑";}
+.itemText span{float:right;color:#3399ff;}
+.itemText a{font:16px "微软雅黑";color:#999;display:block;margin-top:67px;}
+/*此处是第二个第三个图片*/
+.itemText2{margin:0 auto;}
+.itemTextTitle{text-align:center;font:20px "微软雅黑";padding-bottom:24px;padding-top:5px;width:280px;margin:0 auto;}
+.itemcontent,.itemcity,.itemmoney,.itempercent{font:14px "微软雅黑";color:#666;}/*此处是字体颜色和字号*/
+.itemcontent{position:absolute;top:350px;width:340px;left:13px;}
+.itemcity{display:block;left:28px;position:absolute;bottom:56px;}
+.itemmoney{display:inline-block;position:absolute;bottom:10px;left:28px;float:left;}
+.itempercent{display:inline-block;position:absolute;bottom:10px;padding-left:275px;float:right;}
+
+.itemProgressImg1{width:310px;height:7px;border-radius:4px;background:#ccc;position:absolute;top:483px;left:28px;}/*这个地方插图会不好，灵活性低，所有是写的矩形*/
+.itemProgressImg2{width:34%;height:7px;background:#ff6520;border-radius:4px;}
+.itemProgressImg2-art3{width:14%;height:7px;background:#ff6520;border-radius:4px;}
+
+/*.artItem2{position:relative;}/*行里的第二个框是父盒子，所以给的相对定位*/
+.artItem3{position:relative;}/*行里的第三个框是父盒子，所以给的相对定位但是可以用直接给li一个相对定位代替，所以就注释掉了*/
+/*此处是成功案例*/
+.successCase{height:290px;background:#f3f3f3;margin-top:15px;}
+.successCase img{display:inline-block;float:left;padding-top:15px;}
+.successCase p{width:940px;float:left;padding:36px 0 0 25px;font:14px "微软雅黑";color:#999;}
+
+
+/*此处是合作伙伴*/
+.coporation{margin-top:15px;border-top:1px #ccc solid;padding-bottom:10px;}
+.partner{display:block;width:92px;border-top:3px #041563 solid;text-align:center;font:18px/30px "微软雅黑";color:#333;}
+.coporation li{float:left;}
+.newsArrowleft{width:14px;height:23px;margin-top:25px;float:left;cursor:pointer;}
+.newsArrowright{width:14px;height:23px;margin-top:25px;float:right;cursor:pointer;}
+.enterprise{width:972px;float:left;margin-left:58px;margin-top:12px;}
+.newsImgList{width:140px;height:48px;margin:0 10px;float:left;border:1px #ccc solid;}
+
+/*此处是页面底部*/
+/*此处是底部左边*/
+.footer{height:158px;background:#363636;margin-top:50px;}
+.footerLeft{height:158px;width:568px;float:left;}
+.footerLeft li{float:left;width:25%;padding-top:25px;text-indent:10px;}
+.footerLeft dt{font:14px "宋体";color:#fff;line-height:34px;text-indent:14px;}
+.footerLeft dd a{color:#ccc;line-height:24px;}
+.footerLeft dd a:hover{text-decoration:none;}
+
+
+/*此处是底部中间微博微信部分*/
+.footerCenter{width:236px;float:left;margin-top:41px;}
+.footerCenter a{color:#fff;text-align:center;display:block;width:57px;}
+.footerCenter a:hover{text-decoration:none;}
+.footerWeixin,.footerWeibo{display:block;width:57px;height:45px;margin-bottom:19px;}
+.footerWeixin{background:url(../images/weiboweixin.png) no-repeat 0 0;}/*这个地方用的是精灵(sprite)图*/
+.footerWeibo{background:url(../images/weiboweixin.png) no-repeat 0 -140px;}
+.weixin,.weibo{float:left;}
+.weibo{margin-left:46px;}
+.weixin .footerWeixin:hover{background:url(../images/weiboweixin.png) no-repeat 0 -70px;}/*注意此处的hover是不需要用footerCenter的，请注意背景图片是给footerweixin的，其实a标签下的，类的前面的点不能少*/
+.weibo .footerWeibo:hover{background:url(../images/weiboweixin.png) no-repeat 0 -210px;}
+
+
+/*此处是底部右边部分*/
+.footerRight{height:117px;width:196px;float:left;padding-top:41px;color:#ccc;}
+.footerRight span{color:#f30;font:30px/40px arial;}
+
+/*网站安全部门类的*/
+.footsec{background:#1e2229;color:#666;height:47px;text-align:center;line-height:47px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
